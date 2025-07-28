@@ -38,14 +38,14 @@ The solution is containerized with Docker.
 
 1.  **Build the Docker image**:
     ```bash
-    docker build --platform linux/amd64 -t pdf-processor .
+    docker build --platform linux/amd64 -t pdf-nexus .
     ```
     This command is specified in the challenge guidelines.
 
 2.  **Run the container**:
     Place your PDFs in a local `input` directory and create an `output` directory. Then, run the following command:
     ```bash
-    docker run --rm -v $(pwd)/input:/app/input:ro -v $(pwd)/output:/app/output --network none pdf-processor
+    docker run --rm -v $(pwd)/input:/app/input:ro -v $(pwd)/output:/app/output --network none pdf-nexus
     ```
     This command mounts the local directories into the container and runs the processing script. The container will automatically process all PDFs from the `/app/input` directory and place the resulting `.json` files in the `/app/output` directory.
 
