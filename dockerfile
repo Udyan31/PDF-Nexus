@@ -1,4 +1,4 @@
-# Use a specific Python version on the required AMD64 platform
+# Using a specific Python version on the required AMD64 platform
 FROM --platform=linux/amd64 python:3.10-slim
 
 # Set the working directory inside the container
