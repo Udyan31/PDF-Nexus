@@ -1,4 +1,4 @@
-# Challenge 1a: Intelligent PDF Structure Extractor
+# PDF-Nexus
 
 This project is a high-performance solution for Challenge 1a of the Adobe India Hackathon. It intelligently extracts a document's title and hierarchical headings (H1, H2, H3) from PDF files, producing a structured JSON output. The solution is built to be fast, accurate, and language-agnostic, running entirely offline within a Docker container.
 
